@@ -1,0 +1,38 @@
+body {
+    font-family: $text-font;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: $dark-color;
+    color: $lightest-color;
+}
+
+.title {
+    color: $primary-color;
+    font-family: $title-font;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 24px;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.subtitle--primary {
+    color: $secondary-color;
+    font-family: $title-font;
+}
+
+.subtitle--secondary {
+    color: $lightest-color;
+    margin-bottom: 24px;
+}
+
+.description {
+    margin: 0% 8% 2% 8%;
+    text-align: center;
+}

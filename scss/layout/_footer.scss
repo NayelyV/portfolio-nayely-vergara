@@ -1,0 +1,31 @@
+.footer {
+    background-color: $darkest-color;
+}
+
+.footer__contact {
+    font-size: 1rem;
+    line-height: 0.8;
+    a {
+        color: white;
+    }
+    a:hover {
+        color: #00FFF0;
+    }
+}
+
+.footer__social {
+    img {
+        border-radius: $border-radius * 3;
+        border: 1px solid #00FFF0;
+        height: 48px;
+        width: 48px;
+    }
+    img:hover {
+        transform: scale(1.1);
+        background: #00ffee80;
+    }
+}
+
+.footer__social__copyright {
+    font-size: 0.7rem;
+}

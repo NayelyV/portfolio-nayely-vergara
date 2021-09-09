@@ -1,0 +1,64 @@
+@mixin frame($width, $height) {
+    height: $height;
+    width: $width;
+}
+.card {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+}
+
+.card--service {
+    img {
+        @include frame(200px, 200px);
+        object-fit: cover;
+    }
+    h3 {
+        color: $secondary-color;
+    }
+    p {
+        color: $light-color;
+    }
+}
+
+.card--client {
+    img {
+        @include frame($width, 160px);
+        object-fit: cover;
+        border-radius: $border-radius;
+    }
+    h3 {
+        color: $lightest-color;
+        text-align: center;
+    }
+}
+
+.card--blog {
+    background-color: $darkest-color;
+    border-radius: $border-radius / 2;
+    padding: 1%;
+
+    img {
+      width: 100%;  
+    }
+    h3 {
+        color: $secondary-color;
+        font-family: $title-font;
+        font-size: 1.2rem;
+        font-weight: 400;
+        width: 100%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    p {
+        width: 100%;
+        color: $light-color;
+        margin-left: 2%;
+    }
+    transition: 0.3s ease-in-out;
+}
+
+.card--blog:hover {
+    transform: scale(1.1);
+}

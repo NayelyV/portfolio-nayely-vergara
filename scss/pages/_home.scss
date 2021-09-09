@@ -1,0 +1,91 @@
+.home-container {
+    @include frame($width, auto);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.home-container__detail {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.home-container__detail--leading {
+    margin: 2%;
+}
+
+.home-container__detail--center {
+    padding: 4%;
+    align-items: center stretch; 
+    img {
+        flex: 1;
+        width: 40%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+        margin-right: 4%;
+    }
+}
+
+.home-container__detail__description {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.home-container--large {
+    margin: 80px 0px 80px 0px;
+}
+
+.home-container--medium {
+    margin-bottom: 2%;
+}
+
+.home-container--dark {
+    background-color: $dark-color;
+    padding: 2% 0%;
+}
+
+.service-card {
+    img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        transition: all 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+    img:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 #00D1FF);
+        transform: scale(1.1);
+    }
+    h3 {
+        color: #00D1FF;
+    }
+    
+    p {
+        color: #C6C6C6;
+    }
+
+}
+
+.client-card {
+    img {
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+    }
+    h3 {
+        color: white;
+        text-align: center;
+    }
+}
+
+.home-blog-content {
+    img {
+        width: 100%;
+    }
+    a {
+        width: 40%;
+    }
+}

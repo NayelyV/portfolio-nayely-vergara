@@ -1,0 +1,20 @@
+.banner {
+    height: 90vh;
+    width: $width;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner--primary {
+    height: $height / 2.5;
+}
+
+.banner--secondary {
+    height: $height / 3;
+}
+
+.banner__caption {
+    right: 0%;
+    left: 5%;
+    text-align: left;
+}

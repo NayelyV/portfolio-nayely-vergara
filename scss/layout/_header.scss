@@ -1,0 +1,35 @@
+/* Menu */
+
+.header {
+    background-color: $darkest-color;
+    height: 64px;
+    i {
+        color:white;
+        font-size: 2rem;
+    }
+}
+
+.header__brand, .header__brand:hover {
+    display: flex;
+    align-items: center;
+    color: #00FFF0;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8px;
+    img {
+        height: 24px;
+        margin-right: 8px;
+    }
+}
+
+.header__link {
+    color: #A8A8A8;;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+.header__link:hover {
+    color: #00FFF0;
+}
+.active {
+    color: white;
+}
