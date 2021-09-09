@@ -39,20 +39,20 @@
     padding: 1%;
 
     img {
-      width: 100%;  
+      width: $width;  
     }
     h3 {
         color: $secondary-color;
         font-family: $title-font;
         font-size: 1.2rem;
         font-weight: 400;
-        width: 100%;
+        width: $width;
         margin-left: 2%;
         margin-bottom: 2%;
     }
 
     p {
-        width: 100%;
+        width: $width;
         color: $light-color;
         margin-left: 2%;
     }

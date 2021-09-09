@@ -22,7 +22,7 @@
         width: 40%;
         object-fit: cover;
         object-position: center;
-        border-radius: 8px;
+        border-radius: $border-radius;
         margin-right: 4%;
     }
 }
@@ -49,14 +49,13 @@
 
 .service-card {
     img {
-        height: 200px;
-        width: 200px;
+        @include frame(200px, 200px);
         object-fit: cover;
         transition: all 0.2s;
         transition-timing-function: ease-in-out;
     }
     img:hover {
-        filter: opacity(0.5) drop-shadow(0 0 0 #00D1FF);
+        filter: opacity(0.5) drop-shadow(0 0 0 $secondary-color);
         transform: scale(1.1);
     }
     h3 {
@@ -71,21 +70,39 @@
 
 .client-card {
     img {
-        height: 160px;
-        width: 100%;
+        @include frame($width, 160px);
         object-fit: cover;
     }
     h3 {
-        color: white;
+        color: $lightest-color;
         text-align: center;
     }
 }
 
 .home-blog-content {
     img {
-        width: 100%;
+        width: $width;
     }
     a {
         width: 40%;
+    }
+}
+
+@for $index from 1 through 3 {
+    .service-#{$index} {
+        h3 {
+            @if $index % 2 == 0 {
+                color: $secondary-color;
+            } @else {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+@each $client in bbva, abm, invex {
+    .#{$client}-client {
+        border: 2px solid $secondary-color;
+        border-radius: $border-radius;
     }
 }

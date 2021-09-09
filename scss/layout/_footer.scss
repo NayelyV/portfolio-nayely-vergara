@@ -6,19 +6,18 @@
     font-size: 1rem;
     line-height: 0.8;
     a {
-        color: white;
+        color: $lightest-color;
     }
     a:hover {
-        color: #00FFF0;
+        color: $primary-color;
     }
 }
 
 .footer__social {
     img {
         border-radius: $border-radius * 3;
-        border: 1px solid #00FFF0;
-        height: 48px;
-        width: 48px;
+        border: 1px solid $primary-color;
+        @include frame(48px, 48px);
     }
     img:hover {
         transform: scale(1.1);
