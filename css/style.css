@@ -87,7 +87,13 @@ body {
 .card--service img {
   height: 200px;
   width: 200px;
-  object-fit: cover; }
+  object-fit: cover;
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out; }
+
+.card--service img:hover {
+  filter: opacity(0.5) drop-shadow(0 0 0 #00D1FF);
+  transform: scale(1.1); }
 
 .card--service h3 {
   color: #00D1FF; }
@@ -99,6 +105,7 @@ body {
   height: 160px;
   width: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 8px; }
 
 .card--client h3 {
@@ -223,34 +230,10 @@ body {
   background-color: #101010;
   padding: 2% 0%; }
 
-.service-card img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-  transition: all 0.2s;
-  transition-timing-function: ease-in-out; }
-
-.service-card img:hover {
-  filter: opacity(0.5) drop-shadow(0 0 0 #00D1FF);
-  transform: scale(1.1); }
-
-.service-card h3 {
-  color: #00D1FF; }
-
-.service-card p {
-  color: #C6C6C6; }
-
-.client-card img {
-  height: 160px;
-  width: 100%;
-  object-fit: cover; }
-
-.client-card h3 {
-  color: white;
-  text-align: center; }
-
 .home-blog-content img {
-  width: 100%; }
+  width: 100%;
+  object-fit: cover;
+  object-position: center; }
 
 .home-blog-content a {
   width: 40%; }
@@ -309,3 +292,74 @@ body {
       height: 210px;
       width: 100%;
       margin-bottom: 24px; }
+
+/**** Small ****/
+@media only screen and (max-width: 767px)  {
+
+  .header .container-fluid {
+    padding: 0%;
+  }
+
+  .navbar-nav {
+    padding-left: 24px;
+  }
+
+  .footer__contact {
+    display: none;
+  }
+
+  /* Banner */
+  .banner {
+      height: 80vh;
+  }
+
+  .banner--primary {
+    height: 50vh; 
+  }
+
+  .banner--secondary {
+    height: 40vh; 
+  }
+}
+
+/**** Medium ****/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  body {
+    font-size: 1rem;
+  }
+
+  .header .container-fluid {
+    padding: 0%;
+  }
+
+  .navbar-nav {
+    padding-left: 24px;
+  }
+
+  .banner {
+    height: 60vh;
+  }
+
+  .banner--primary {
+    height: 25vh; 
+  }
+
+  .banner--secondary {
+    height: 20vh; 
+  }
+
+  .card--service img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card--client img {
+    height: 100px;
+  }
+
+  .home-blog-content img {
+    height: 100%;
+  }
+
+}

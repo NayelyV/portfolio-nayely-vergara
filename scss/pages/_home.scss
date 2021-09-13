@@ -47,41 +47,11 @@
     padding: 2% 0%;
 }
 
-.service-card {
-    img {
-        @include frame(200px, 200px);
-        object-fit: cover;
-        transition: all 0.2s;
-        transition-timing-function: ease-in-out;
-    }
-    img:hover {
-        filter: opacity(0.5) drop-shadow(0 0 0 $secondary-color);
-        transform: scale(1.1);
-    }
-    h3 {
-        color: #00D1FF;
-    }
-    
-    p {
-        color: #C6C6C6;
-    }
-
-}
-
-.client-card {
-    img {
-        @include frame($width, 160px);
-        object-fit: cover;
-    }
-    h3 {
-        color: $lightest-color;
-        text-align: center;
-    }
-}
-
 .home-blog-content {
     img {
         width: $width;
+        object-fit: cover;
+        object-position: center;
     }
     a {
         width: 40%;
