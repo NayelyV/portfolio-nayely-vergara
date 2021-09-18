@@ -54,7 +54,7 @@ body {
   height: 33.33333vh; }
 
 .banner__caption {
-  right: 0%;
+  width: 30%;
   left: 5%;
   text-align: left; }
 
@@ -295,6 +295,14 @@ body {
 
 /**** Small ****/
 @media only screen and (max-width: 767px)  {
+  .button, .button--large, .button--small {
+    border: 1px solid #00fff0;
+    color: #00fff0;
+  }
+
+  .column img {
+    filter: grayscale(0);
+  }
 
   .header .container-fluid {
     padding: 0%;
@@ -319,6 +327,14 @@ body {
 
   .banner--secondary {
     height: 40vh; 
+  }
+  .banner__caption {
+    width: 90%;
+    left: 2%;
+  }
+
+  .carousel-item img {
+    filter:blur(5px) grayscale(80%);
   }
 }
 
@@ -347,6 +363,10 @@ body {
 
   .banner--secondary {
     height: 20vh; 
+  }
+
+  .banner__caption {
+    width: 40%;
   }
 
   .card--service img {
